@@ -48,6 +48,11 @@ a.filtre:focus {
   display: block;
 }
 
+.filtre:focus .hover-card {
+  opacity: 1;
+  transform: translateY(0);
+}
+
 .portfolio-card {
   position: relative;
   border: 0;
