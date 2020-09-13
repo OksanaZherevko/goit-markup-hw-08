@@ -1,0 +1,30 @@
+.activity-box {
+  position: relative;
+  width: calc((100% - 30px * 2) / 3);
+  margin-right: 30px;
+
+  &:nth-child(3n) {
+    margin-right: 0;
+  }
+}
+
+.activity-text-box {
+  position: absolute;
+  width: 100%;
+  top: 224px;
+}
+
+.activity-text {
+  margin-top: 0px;
+  margin-bottom: 0px;
+  padding-top: 27px;
+  padding-bottom: 27px;
+  color: $white-color;
+  background-color: $activity-color;
+
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  text-align: center;
+  text-transform: uppercase;
+}

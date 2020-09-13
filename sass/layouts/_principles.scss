@@ -1,0 +1,28 @@
+.box.principles {
+  padding-bottom: 0;
+}
+
+.cover {
+  padding: 25px 100px;
+  margin-bottom: 30px;
+  background-color: $teams-color;
+  border-radius: 4px;
+}
+
+.principles-title {
+  color: $dark-color;
+  margin: 0;
+  margin-bottom: 10px;
+
+  font-size: 14px;
+  line-height: 1.14;
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+}
+
+.principles-text {
+  margin: 0;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+}

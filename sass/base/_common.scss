@@ -1,0 +1,84 @@
+/*Общие стили*/
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: $font-family-primary;
+  font-size: 14px;
+  line-height: 1.714;
+  letter-spacing: 0.03em;
+  color: $main-color;
+}
+
+a {
+  text-decoration: none;
+}
+
+h1,
+h2,
+h3,
+p {
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  display: block;
+}
+
+.container {
+  width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
+/* outline: 2px solid var(--outline-color); */
+ }
+
+ .list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+/*Для секций*/
+
+.box {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
+.list-box {
+  display: flex;
+  justify-content: center;
+}
+
+.item-box {
+  width: calc((100% - 30px * 3) / 4);
+  margin-right: 30px;
+
+  &:last-child {
+    margin-right: 0;
+  }
+}
+
+.section-title {
+  margin: 0;
+  margin-bottom: 50px;
+  color: $dark-color;
+
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.17;
+  text-align: center;
+  letter-spacing: 0.03em;
+}
+
