@@ -1,15 +1,25 @@
 .box.principles {
-  padding-bottom: 0;
+  padding-top: 30px;
+
+  @media screen and (min-width: 1200px) {
+    padding-top: 64px;
+  }
 }
 
 .cover {
-  padding: 25px 100px;
+  padding: 25px 1px;
   margin-bottom: 30px;
   background-color: $teams-color;
   border-radius: 4px;
 }
 
+.principles-icon {
+  display: block;
+  margin: auto;
+}
+
 .principles-title {
+  text-align: center;
   color: $dark-color;
   margin: 0;
   margin-bottom: 10px;

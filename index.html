@@ -17,34 +17,57 @@
         <div class="header">
          <nav class="navigation">
           <a class="logo" href="./index.html"><span class="logo-color">Web</span> Studio</a>
-          <ul class="list nav">
-            <li class="nav-item"><a href="./index.html" class="nav-link current">Студия</a></li>
-            <li class="nav-item"><a href="./portfolio.html" class="nav-link">Портфолио</a></li>
-            <li class="nav-item"><a href="#" class="nav-link">Контакты</a></li>
-          </ul>
-        </nav>
-       
-        <address class="adress-top">
-        <ul class="list menu-contacts">
-            <li class="contact-item">
-              <a href="mailto:info@devstudio.com" class="email-link" aria-label="ссылка на почту">
-                 <svg class="sprite-envelope" width="16" height="12">
-                 <use href="./images/sprite_new.svg#icon-envelope_hover"></use>
-                 </svg>
-                info@devstudio.com
-              </a>
-            </li>
+          
+          <button
+              type="button"
+              class="menu-btn"
+              aria-label="переключатель мобильного меню"
+              aria-controls="menu-container"
+              aria-expanded="false"
+              data-menu-button
+            >
+            <svg width="40" height="40" class="close-icon">
+              <use
+                class="icon-cross"
+                href="./images/images_new/sprite-icon.svg#close_40px"
+              ></use>
+              <use
+                class="icon-menu"
+                href="./images/images_new/sprite-icon.svg#menu_40px"
+              ></use>
+            </svg>
+            </button>
 
-            <li class="contact-item">
-              <a href="tel:+380961111111" class="phone-link" aria-label="телефон"> 
-                 <svg class="sprite-smartphone" width="10" height="16">
-                 <use href="./images/sprite_new.svg#icon-smartphone"></use>
-                 </svg>
-                +38 096 111 11 11</a>
-            </li>
-        </ul>
-        </address>
-        </div>
+            <div class="menu-container" id="menu-container" data-menu>
+
+              <ul class="list nav">
+                <li class="nav-item"><a href="./index.html" class="nav-link current">Студия</a></li>
+                <li class="nav-item"><a href="./portfolio.html" class="nav-link">Портфолио</a></li>
+                <li class="nav-item"><a href="#" class="nav-link">Контакты</a></li>
+              </ul>
+               
+        
+              <ul class="list menu-contacts">
+                <li class="contact-item">
+                  <a href="mailto:info@devstudio.com" class="link-contact" aria-label="ссылка на почту">
+                    <svg class="sprite-envelope" width="16" height="12">
+                    <use href="./images/images_new/sprite-icon.svg#envelope"></use>
+                    </svg>
+                    info@devstudio.com
+                  </a>
+                </li>
+
+                <li class="contact-item">
+                  <a href="tel:+380961111111" class="link-contact" aria-label="телефон"> 
+                    <svg class="sprite-smartphone" width="10" height="16">
+                    <use href="./images/images_new/sprite-icon.svg#smartphone"></use>
+                    </svg>
+                    +38 096 111 11 11</a>
+                </li>
+              </ul>
+            </div>
+        </nav>
+       </div>
       </div>
     </header>
 
@@ -69,8 +92,8 @@
         <ul class="list list-box">
         <li class="item-box">
           <div class="cover" aria-label="внимание к деталям">            
-            <svg class="sprite-antenna" width="70" height="70">
-              <use href="./images/sprite_new.svg#icon-antenna1"></use>
+            <svg class="principles-icon" width="70" height="70">
+              <use href="./images/images_new/sprite-icon.svg#antenna"></use>
             </svg>
           </div>
           <h3 class="principles-title">Внимание к деталям</h3>
@@ -79,8 +102,8 @@
      
         <li class="item-box">
           <div class="cover" aria-label="пунктуальность">
-            <svg class="sprite-clock" width="70" height="70">
-              <use href="./images/sprite_new.svg#icon-clock1"></use>
+            <svg class="principles-icon" width="70" height="70">
+              <use href="./images/images_new/sprite-icon.svg#clock"></use>
             </svg>
           </div>
           <h3 class="principles-title">Пунктуальность</h3>
@@ -89,8 +112,8 @@
      
         <li class="item-box">
           <div class="cover" aria-label="планирование">
-            <svg class="sprite-diagram" width="70" height="70">
-              <use href="./images/sprite_new.svg#icon-diagram1"></use>
+            <svg class="principles-icon" width="70" height="70">
+              <use href="./images/images_new/sprite-icon.svg#diagram"></use>
             </svg>
           </div>
           <h3 class="principles-title">Планирование</h3>
@@ -99,8 +122,8 @@
      
         <li class="priorities">
           <div class="cover" aria-label="технологии">
-            <svg class="sprite-diagram" width="70" height="70">
-              <use href="./images/sprite_new.svg#icon-astronaut1"></use>
+            <svg class="principles-icon" width="70" height="70">
+              <use href="./images/images_new/sprite-icon.svg#astronaut"></use>
             </svg>
           </div>
           <h3 class="principles-title">Современные технологии</h3>
@@ -113,26 +136,44 @@
 
     <!-- activity -->
     <section>
-      <div class="container">
+      <div class="container activities">
         <div class="box">
         <h2 class="section-title">Чем мы занимаемся</h2>
       <ul class="list list-box">
         <li class="activity-box">
-          <img src="./images/desktop.jpg" width="370" alt="приложение"/>
+          <img
+                  src="./images/images_new/activity/leptop.jpg"
+                  srcset="./images/images_new/activity/leptop@2x.jpg 2x"
+                  alt="приложение"
+                  width="370"
+                  height="294"
+           />
           <div class="activity-text-box">
            <p class="activity-text">Десктопные приложения</p>
           </div>
         </li>
       
         <li class="activity-box">
-          <img src="./images/mobile.jpg" width="370" alt="телефон"/>
+          <img
+                  src="./images/images_new/activity/mobile.jpg"
+                  srcset="./images/images_new/activity/mobile@2x.jpg 2x"
+                  alt="телефон"
+                  width="370"
+                  height="294"
+                />
           <div class="activity-text-box">
             <p class="activity-text">Мобильные приложения</p>
           </div>
         </li>
       
         <li class="activity-box">
-          <img src="./images/monitor.jpg" width="370" alt="монитор"/>
+          <img
+          src="./images/images_new/activity/design.jpg"
+          srcset="./images/images_new/activity/design@2x.jpg 2x"
+          alt="монитор"
+          width="370"
+          height="294"
+        />
           <div class="activity-text-box">
             <p class="activity-text">Дизайнерские решения</p>
           </div>
@@ -142,6 +183,7 @@
       </div>
       </section>
         
+
     <!-- our team -->
     <section class="teams">
       <div class="container">
@@ -149,15 +191,41 @@
         <h2 class="section-title">Наша команда</h2>
         <ul class="list list-box">
         <li class="item-box team-item">
-          <img src="./images/ihor.jpg" width="270" alt="фото Игорь"/>
+          <picture>
+            <source
+              srcset="
+                ./images/images_new/team/team-phone-igor.jpg 1x,
+                ./images/images_new/team/team-phone-igor@2x.jpg 2x
+              "
+              media="(max-width: 767px)"
+            />
+            <source
+              srcset="
+                ./images/images_new/team/team-tablet-igor.jpg 1x,
+                ./images/images_new/team/team-tablet-igor@2x.jpg 2x
+              "
+              media="(min-width: 768px)"
+            />
+            <source
+              srcset="
+                ./images/images_new/team/team-desktop-igor.jpg 1x,
+                ./images/images_new/team/team-desktop-igor@2x.jpg 2x
+              "
+              media="(min-width: 1200px)"
+            />
+            <img
+              src="./images/images_new/team/team-desktop-igor.jpg"
+              alt="фото продукт дизайнера"
+            />
+           </picture>
           <h3 class="team-name" lang="ru">Игорь Демьяненко</h3>
           <p class="team-position" lang="en">Product Designer</p>
 
-        <ul class="list social-list">
+          <ul class="list social-list">
             <li class="social-item">
               <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer" aria-label="ссылка на instagram" class="social-link">
                 <svg class="social-icon" width="20" height="20">
-                  <use href="./images/sprite_new.svg#icon-instagram2"></use>
+                  <use href="./images/images_new/sprite-icon.svg#instagram"></use>
                 </svg>
               </a>
             </li>
@@ -165,7 +233,7 @@
             <li class="social-item">
               <a href="https://twitter.com/" target="_blank" rel="noopener noreferrer" aria-label="ссылка на twitter" class="social-link">
                 <svg class="social-icon" width="20" height="20">
-                  <use href="./images/sprite_new.svg#icon-twitter1"></use>
+                  <use href="./images/images_new/sprite-icon.svg#twitter"></use>
                 </svg>
               </a>
             </li>
@@ -173,7 +241,7 @@
             <li class="social-item">
               <a href="https://facebook.com/" target="_blank" rel="noopener noreferrer" aria-label="ссылка на facebook" class="social-link">
                 <svg class="social-icon" width="20" height="20">
-                  <use href="./images/sprite_new.svg#icon-facebook1"></use>
+                  <use href="./images/images_new/sprite-icon.svg#facebook"></use>
                 </svg>
               </a>
             </li>
@@ -181,7 +249,7 @@
             <li class="social-item">
               <a href="https://www.linkedin.com" target="_blank" rel="noopener noreferrer" aria-label="ссылка на linkedin" class="social-link">
                 <svg class="social-icon" width="20" height="20">
-                  <use href="./images/sprite_new.svg#icon-linkedin1"></use>
+                  <use href="./images/images_new/sprite-icon.svg#linkedin"></use>
                 </svg>
                 </a>
             </li>
@@ -190,7 +258,33 @@
         </li>
       
         <li class="item-box team-item">
-          <img src="./images/olga.jpg" width="270" alt="фото Ольга"/>
+          <picture>
+            <source
+              srcset="
+                ./images/images_new/team/team-phone-olga.jpg 1x,
+                ./images/images_new/team/team-phone-olga@2x.jpg 2x
+              "
+              media="(max-width: 767px)"
+            />
+            <source
+              srcset="
+                ./images/images_new/team/team-tablet-olga.jpg 1x,
+                ./images/images_new/team/team-tablet-olga@2x.jpg 2x
+              "
+              media="(min-width: 768px)"
+            />
+            <source
+              srcset="
+                ./images/images_new/team/team-desktop-olga.jpg 1x,
+                ./images/images_new/team/team-desktop-olga@2x.jpg 2x
+              "
+              media="(min-width: 1200px)"
+            />
+            <img
+              src="./images/images_new/team/team-desktop-olga.jpg"
+              alt="фото Ольга"
+            />
+            </picture>
           <h3 class="team-name" lang="ru">Ольга Репина</h3>
           <p class="team-position" lang="en">Frontend Developer</p>
 
@@ -198,7 +292,7 @@
             <li class="social-item">
               <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer" aria-label="ссылка на instagram" class="social-link">
                 <svg class="social-icon" width="20" height="20">
-                  <use href="./images/sprite_new.svg#icon-instagram2"></use>
+                  <use href="./images/images_new/sprite-icon.svg#instagram"></use>
                 </svg>
               </a>
             </li>
@@ -206,7 +300,7 @@
             <li class="social-item">
               <a href="https://twitter.com/" target="_blank" rel="noopener noreferrer" aria-label="ссылка на twitter" class="social-link">
                 <svg class="social-icon" width="20" height="20">
-                  <use href="./images/sprite_new.svg#icon-twitter1"></use>
+                  <use href="./images/images_new/sprite-icon.svg#twitter"></use>
                 </svg>
               </a>
             </li>
@@ -214,7 +308,7 @@
             <li class="social-item">
               <a href="https://facebook.com/" target="_blank" rel="noopener noreferrer" aria-label="ссылка на facebook" class="social-link">
                 <svg class="social-icon" width="20" height="20">
-                  <use href="./images/sprite_new.svg#icon-facebook1"></use>
+                  <use href="./images/images_new/sprite-icon.svg#facebook"></use>
                 </svg>
               </a>
             </li>
@@ -222,7 +316,7 @@
             <li class="social-item">
               <a href="https://www.linkedin.com" target="_blank" rel="noopener noreferrer" aria-label="ссылка на linkedin" class="social-link">
                 <svg class="social-icon" width="20" height="20">
-                  <use href="./images/sprite_new.svg#icon-linkedin1"></use>
+                  <use href="./images/images_new/sprite-icon.svg#linkedin"></use>
                 </svg>
                 </a>
             </li>
@@ -230,7 +324,33 @@
         </li>
       
         <li class="item-box team-item">
-          <img src="./images/nikola.jpg" width="270" alt="фото Николай"/>
+          <picture>
+            <source
+              srcset="
+                ./images/images_new/team/team-phone-nikolay.jpg 1x,
+                ./images/images_new/team/team-phone-nikolay@2x.jpg 2x
+              "
+              media="(max-width: 767px)"
+            />
+            <source
+              srcset="
+                ./images/images_new/team/team-tablet-nikolay.jpg 1x,
+                ./images/images_new/team/team-tablet-nikolay@2x.jpg 2x
+              "
+              media="(min-width: 768px)"
+            />
+            <source
+              srcset="
+                ./images/images_new/team/team-desktop-nikolay.jpg 1x,
+                ./images/images_new/team/team-desktop-nikolay@2x.jpg 2x
+              "
+              media="(min-width: 1200px)"
+            />
+            <img
+              src="./images/images_new/team/team-desktop-nikolay.jpg"
+              alt="фото Николай"
+            />
+          </picture>
           <h3 class="team-name" lang="ru">Николай Тарасов</h3>
           <p class="team-position" lang="en">Marketing</p>
 
@@ -238,7 +358,7 @@
             <li class="social-item">
               <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer" aria-label="ссылка на instagram" class="social-link">
                 <svg class="social-icon" width="20" height="20">
-                  <use href="./images/sprite_new.svg#icon-instagram2"></use>
+                  <use href="./images/images_new/sprite-icon.svg#instagram"></use>
                 </svg>
               </a>
             </li>
@@ -246,7 +366,7 @@
             <li class="social-item">
               <a href="https://twitter.com/" target="_blank" rel="noopener noreferrer" aria-label="ссылка на twitter" class="social-link">
                 <svg class="social-icon" width="20" height="20">
-                  <use href="./images/sprite_new.svg#icon-twitter1"></use>
+                  <use href="./images/images_new/sprite-icon.svg#twitter"></use>
                 </svg>
               </a>
             </li>
@@ -254,7 +374,7 @@
             <li class="social-item">
               <a href="https://facebook.com/" target="_blank" rel="noopener noreferrer" aria-label="ссылка на facebook" class="social-link">
                 <svg class="social-icon" width="20" height="20">
-                  <use href="./images/sprite_new.svg#icon-facebook1"></use>
+                  <use href="./images/images_new/sprite-icon.svg#facebook"></use>
                 </svg>
               </a>
             </li>
@@ -262,7 +382,7 @@
             <li class="social-item">
               <a href="https://www.linkedin.com" target="_blank" rel="noopener noreferrer" aria-label="ссылка на linkedin" class="social-link">
                 <svg class="social-icon" width="20" height="20">
-                  <use href="./images/sprite_new.svg#icon-linkedin1"></use>
+                  <use href="./images/images_new/sprite-icon.svg#linkedin"></use>
                 </svg>
                 </a>
             </li>
@@ -271,7 +391,33 @@
         </li>
 
         <li class="item-box team-item">
-          <img src="./images/mich.jpg" width="270" alt="фото Михаил"/>
+          <picture>
+            <source
+              srcset="
+                ./images/images_new/team/team-phone-mikhail.jpg 1x,
+                ./images/images_new/team/team-phone-mikhail@2x.jpg 2x
+              "
+              media="(max-width: 767px)"
+            />
+            <source
+              srcset="
+                ./images/images_new/team/team-tablet-mikhail.jpg 1x,
+                ./images/images_new/team/team-tablet-mikhail@2x.jpg 2x
+              "
+              media="(min-width: 768px)"
+            />
+            <source
+              srcset="
+                ./images/images_new/team/team-desktop-mikhail.jpg 1x,
+                ./images/images_new/team/team-desktop-mikhail@2x.jpg 2x
+              "
+              media="(min-width: 1200px)"
+            />
+            <img
+              src="./images/images_new/team/team-desktop-mikhail.jpg"
+              alt="фото Михаил"
+            />
+          </picture>
           <h3 class="team-name" lang="ru">Михаил Ермаков</h3>
           <p class="team-position" lang="en">UI Designer</p>
 
@@ -279,7 +425,7 @@
             <li class="social-item">
               <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer" aria-label="ссылка на instagram" class="social-link">
                 <svg class="social-icon" width="20" height="20">
-                  <use href="./images/sprite_new.svg#icon-instagram2"></use>
+                  <use href="./images/images_new/sprite-icon.svg#instagram"></use>
                 </svg>
               </a>
             </li>
@@ -287,7 +433,7 @@
             <li class="social-item">
               <a href="https://twitter.com/" target="_blank" rel="noopener noreferrer" aria-label="ссылка на twitter" class="social-link">
                 <svg class="social-icon" width="20" height="20">
-                  <use href="./images/sprite_new.svg#icon-twitter1"></use>
+                  <use href="./images/images_new/sprite-icon.svg#twitter"></use>
                 </svg>
               </a>
             </li>
@@ -295,7 +441,7 @@
             <li class="social-item">
               <a href="https://facebook.com/" target="_blank" rel="noopener noreferrer" aria-label="ссылка на facebook" class="social-link">
                 <svg class="social-icon" width="20" height="20">
-                  <use href="./images/sprite_new.svg#icon-facebook1"></use>
+                  <use href="./images/images_new/sprite-icon.svg#facebook"></use>
                 </svg>
               </a>
             </li>
@@ -303,7 +449,7 @@
             <li class="social-item">
               <a href="https://www.linkedin.com" target="_blank" rel="noopener noreferrer" aria-label="ссылка на linkedin" class="social-link">
                 <svg class="social-icon" width="20" height="20">
-                  <use href="./images/sprite_new.svg#icon-linkedin1"></use>
+                  <use href="./images/images_new/sprite-icon.svg#linkedin"></use>
                 </svg>
                 </a>
             </li>
@@ -476,7 +622,7 @@
 
           <label class="form-label">
             <input class="checkbox" type="checkbox" name="policy" value="policy" id="policy"/>
-            <span class="checkbox-icon"></span>
+            <span class="checkbox-icon accept"></span>
             Соглашаюсь с рассылкой и принимаю
             <a href="#" class="contract">Условия договора</a>
           </label>
