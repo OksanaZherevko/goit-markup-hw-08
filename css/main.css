@@ -797,7 +797,7 @@ img {
   margin-top: 50px;
 }
 
-.activity-box:nth-child(3n) {
+.activity-box:last-child {
   margin-right: 0;
 }
 
@@ -808,10 +808,8 @@ img {
 }
 
 .activity-text {
-  margin-top: 0px;
-  margin-bottom: 0px;
-  padding-top: 27px;
-  padding-bottom: 27px;
+  margin: 0;
+  padding: 27px 0;
   color: #FFFFFF;
   background-color: rgba(47, 48, 58, 0.8);
   font-weight: 700;

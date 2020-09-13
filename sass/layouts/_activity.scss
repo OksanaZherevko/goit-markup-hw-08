@@ -10,7 +10,7 @@
   margin-right: 30px;
   margin-top: 50px;
 
-  &:nth-child(3n) {
+  &:last-child {
     margin-right: 0;
   }
 }
@@ -22,10 +22,8 @@
 }
 
 .activity-text {
-  margin-top: 0px;
-  margin-bottom: 0px;
-  padding-top: 27px;
-  padding-bottom: 27px;
+  margin: 0;
+  padding: 27px 0;
   color: $white-color;
   background-color: $activity-color;
 
