@@ -5,12 +5,12 @@
   box-sizing: inherit;
 }
 
-
 * {
   box-sizing: border-box;
 }
 
 body {
+  margin: 0;
   font-family: $font-family-primary;
   font-size: 14px;
   line-height: 1.714;
@@ -32,6 +32,8 @@ p {
 
 img {
   display: block;
+  max-width: 100%;
+  height: auto;
 }
 
 .container {
