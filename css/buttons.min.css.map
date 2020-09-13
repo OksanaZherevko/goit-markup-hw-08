@@ -1,9 +1,0 @@
-{
-    "version": 3,
-    "mappings": "AAEA,AAAA,IAAI,AAAC,CACH,WAAW,CAAE,GAAG,CAChB,SAAS,CAAE,IAAI,CACf,WAAW,CAAE,KAAK,CAClB,cAAc,CAAE,MAAM,CACtB,KAAK,CAAE,kBAAkB,CACzB,UAAU,CAAE,mBAAmB,CAC/B,UAAU,CAAE,mBAAmB,CAC/B,eAAe,CAAE,IAAI,CACrB,OAAO,CAAE,OAAO,CAChB,WAAW,CAAE,MAAM,CACnB,UAAU,CAAE,MAAM,CAClB,aAAa,CAAE,GAAG,CAClB,MAAM,CAAE,GAAG,CACX,OAAO,CAAE,SAAS,CAClB,SAAS,CAAE,KAAK,CACjB",
-    "sources": [
-        "../sass/components/buttons.scss"
-    ],
-    "names": [],
-    "file": "buttons.min.css"
-}
