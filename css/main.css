@@ -848,10 +848,6 @@ img {
   }
 }
 
-.customers-item:last-child {
-  margin-right: 0;
-}
-
 .customers-link {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1194,7 +1190,7 @@ img {
 }
 
 .checkbox {
-  position: absolute;
+  position: bsolute;
   width: 1px;
   height: 1px;
   margin: -1px;
